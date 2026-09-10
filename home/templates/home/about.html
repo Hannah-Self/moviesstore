@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<!--inject proper HTML code inside div of the base.html-->
+{% load static %}
+<!--loads custom image by using static template tag-->
+<div class="p-3">
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-md-6 mx-auto mb-3">
+        <h2>About</h2>
+        <hr />
+        <p>
+           Welcome to GT Movies Store. Curated by Hannah Self, 
+           this store contains movies that have captured the heart of 
+           many students today. With an array of different languages, 
+           discover your next passion to unlock the next binge-watch. 
+        </p>
+        <p>
+          The convenience of our digital platform allows for 
+          the flexibility to watch movies anywhere
+          on your preferred device, whether it's a smart
+          TV, tablet, or smartphone. With our intuitive
+          search and recommendation features, finding your
+          next movie night pick has never been easier.
+        </p>
+      </div>
+      <div class="col-md-6 mx-auto mb-3 text-center">
+        <img src="{% static 'img/about.jpg' %}"
+             class="max-width-100"
+             alt="about" />
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

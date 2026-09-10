@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow p-3 mb-4 rounded">
+                <div class="card-body">
+                    <h2>Sign Up</h2>
+                    <hr />
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ template_data.form.as_p }}
+                        <button type="submit" class="btn bg-dark text-white">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+<!--
+extend base.html
+define heading to Sign Up
+define form for POST, data will be sent using this method
+inside form, use DTL csrf_token to create Cross-Site Request Forgery token
+render template_data.form, represents UserCreationForm passed
+(above) creates user, pass, and pass confirm
+inside form, submit button
+-->
