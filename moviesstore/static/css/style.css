@@ -41,8 +41,8 @@
 
 .img-card-200 {
     flex: 1 1 100%;
-    max-width: 100%;
-    max-height: auto;
+    max-width: 300px;
+    max-height: 200px;
     object-fit: fill;
     overflow-x: hidden;
 }
