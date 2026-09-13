@@ -40,11 +40,8 @@
 }
 
 .img-card-200 {
-    width: auto !important;
-    max-width: 100% !important;
+    width: 100% fit-content;
     max-height: 200px !important;
-    object-fit: contain !important;
-    align-self: center;
 }
 
 .img-card-400 {
