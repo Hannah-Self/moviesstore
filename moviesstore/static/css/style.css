@@ -43,6 +43,7 @@
     width: fit-content;
     max-height: 200px;
     object-fit: fill;
+    overflow-x: hidden;
 }
 
 .img-card-400 {
